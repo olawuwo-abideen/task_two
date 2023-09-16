@@ -7,8 +7,7 @@ const router = express.Router();
 //Adding a person
 router.post('/', async (req, res) => {
     const data = new Model({
-                name: req.body.name,
-                age: req.body.age
+                name: req.body.name
             })
         
             try {
