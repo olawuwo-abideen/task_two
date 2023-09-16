@@ -19,7 +19,6 @@ A `Person` object represents an individual with a name and age.
 #### Fields
 
 - `name` (String): The unique identifier of the person. It is a required field and must be a string.
-- `age` (Number): The age of the person. It is a required field and must be a Number.
 
 ## API Endpoints
 
@@ -31,8 +30,7 @@ A `Person` object represents an individual with a name and age.
 
 ```json
 {
-  "name": "Mike May",
-  "age": 35
+  "name": "Mike May"
 }
 ```
 
@@ -41,8 +39,7 @@ A `Person` object represents an individual with a name and age.
 ```json
 {
   "user_id": "6504bdbe52c59f309f424732",
-  "name": "Mike May",
-  "age": 35
+  "name": "Mike May"
 }
 ```
 
@@ -55,8 +52,7 @@ A `Person` object represents an individual with a name and age.
 ```json
 {
   "user_id": "6504bdbe52c59f309f424732",
-  "name": "Mike May",
-  "age": 35
+  "name": "Mike May"
 }
 ```
 
@@ -69,8 +65,7 @@ A `Person` object represents an individual with a name and age.
 ```json
 {
   "user_id": "6504bdbe52c59f309f424732",
-  "name": "Mike Doe",
-  "age": 37
+  "name": "Mike Doe"
 }
 ```
 
@@ -78,7 +73,7 @@ A `Person` object represents an individual with a name and age.
 
 ```json
 {
-  "message": "Name and age  with the given id has been updated"
+  "message": "Name with the given id has been updated"
 }
 ```
 
@@ -103,7 +98,7 @@ A `Person` object represents an individual with a name and age.
 url = "https://tasktwo-2itn.onrender.com/api/"
 payload = {
     "name": "Mike May",
-    "age": 35
+
 }
 response = requests.post(url, json=payload)
 print(response.json())
